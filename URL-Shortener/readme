@@ -1,0 +1,52 @@
+# 🔗 Go URL Shortener
+
+A lightweight and fast URL shortener service built with Go (Golang). It generates a unique short hash for a given original URL and allows redirection with optional expiration and click tracking.
+
+## 🚀 Features
+
+- ✅ Shorten long URLs with SHA-256 hash
+- ⏳ Set expiration time for shortened URLs
+- 📊 Track number of clicks on each URL
+- 🧩 Simple in-memory storage (no database needed)
+- 🌐 JSON API endpoints for easy integration
+- 🧵 Thread-safe with mutex for concurrent access
+
+---
+
+## 📦 Tech Stack
+
+- **Language:** Go (Golang)
+- **Server:** net/http
+- **Hashing:** crypto/sha256
+- **Data Encoding:** encoding/json
+
+---
+## 📬 API Endpoints
+
+### 🔹 POST `/shorten`
+Shortens a long URL.
+
+#### 🔸 Request Body (JSON):
+```json
+{
+  "url": "https://example.com",
+  "expire_minutes": 60  // optional, defaults to 60 minutes
+}
+🔸 Response (JSON):
+{
+  "short_url": "e4b8f6a1"
+}
+
+🔹 GET /urls
+
+🔸 Response (JSON):
+[
+  {
+    "id": "e4b8f6a1",
+    "original_url": "https://example.com",
+    "short_url": "e4b8f6a1",
+    "creation_date": "2025-06-09T12:30:00Z",
+    "expires_at": "2025-06-09T13:30:00Z",
+    "click_count": 2
+  }
+]
