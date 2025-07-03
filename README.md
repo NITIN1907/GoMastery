@@ -18,11 +18,7 @@ This repository documents my step-by-step journey of learning Go, including:
 ## 🧱 Folder Structure
 
 GoLang-Journey-With-Projects/
-├── Day-1 to Day-24/ # Daily learning modules with code & notes
-├── projects/ # Mini-practice projects
-├── Revision/ # Key takeaways & concept summaries
-├── URL-Shortener/ # Full-fledged REST API project
-├── go.mod / go.sum # Go module dependencies
+<pre> GoLang-Journey-With-Projects/ ├── Day-1 to Day-24/ # 📅 Daily learning modules with code & notes ├── projects/ # 🧪 Mini-practice projects ├── Revision/ # 📝 Key takeaways & concept summaries ├── URL-Shortener/ # 🔗 Full-fledged REST API project ├── book.json # 📚 GoBookStore API structure ├── go.mod # 📦 Go module definition ├── go.sum # 📦 Go dependency checksums </pre>
 
 ## 🔧 Tools & Technologies
 
